@@ -22,19 +22,23 @@ class ThirdScreen extends StatelessWidget {
                   text: "Hello chatGPT, how are you today?",
                   isUserMessage: true,
                 ),
+                const SizedBox(height: 20),
                 buildChatBubble(
                   text: "Hello, I'm fine, how can I help you?",
                   isUserMessage: false,
                 ),
+                const SizedBox(height: 20),
                 buildChatBubble(
                   text: "What is the best programming language?",
                   isUserMessage: true,
                 ),
+                const SizedBox(height: 20),
                 buildChatBubble(
                   text:
                       "There are many programming languages in the market that are used in designing and building websites, various applications and other tasks. All these languages are popular in their place and in the way they are used, and many programmers learn and use them.",
                   isUserMessage: false,
                 ),
+                const SizedBox(height: 20),
                 buildChatBubble(
                   text: "so explain to me more ",
                   isUserMessage: true,
@@ -46,6 +50,7 @@ class ThirdScreen extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
+
                 Expanded(
                   child: TextField(
                     decoration: InputDecoration(
@@ -62,6 +67,7 @@ class ThirdScreen extends StatelessWidget {
                     // Handle send message
                   },
                 ),
+                const SizedBox(height: 100),
               ],
             ),
           ),
